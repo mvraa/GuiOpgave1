@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfDebtorCreditor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DebtorCreditor>
+    <DebitEntries>
+      <DebitEntry>
+        <Value>10</Value>
+        <Timestamp>2020-12-19T18:13:35.2487074+01:00</Timestamp>
+        <Description>Sko</Description>
+      </DebitEntry>
+    </DebitEntries>
+    <Name>Matt</Name>
+    <TotalDebit>10</TotalDebit>
+  </DebtorCreditor>
+  <DebtorCreditor>
+    <DebitEntries>
+      <DebitEntry>
+        <Value>0</Value>
+        <Timestamp>2020-12-19T18:15:11.3142778+01:00</Timestamp>
+        <Description />
+      </DebitEntry>
+    </DebitEntries>
+    <Name>Børge</Name>
+    <TotalDebit>0</TotalDebit>
+  </DebtorCreditor>
+  <DebtorCreditor>
+    <DebitEntries>
+      <DebitEntry>
+        <Value>0</Value>
+        <Timestamp>2020-12-19T18:15:12.9908668+01:00</Timestamp>
+        <Description />
+      </DebitEntry>
+    </DebitEntries>
+    <Name>Bent</Name>
+    <TotalDebit>0</TotalDebit>
+  </DebtorCreditor>
+  <DebtorCreditor>
+    <DebitEntries>
+      <DebitEntry>
+        <Value>90</Value>
+        <Timestamp>2020-12-19T18:15:13.1764482+01:00</Timestamp>
+        <Description />
+      </DebitEntry>
+      <DebitEntry>
+        <Value>100</Value>
+        <Timestamp>2020-12-19T18:16:44.5878848+01:00</Timestamp>
+        <Description />
+      </DebitEntry>
+    </DebitEntries>
+    <Name>Benny</Name>
+    <TotalDebit>190</TotalDebit>
+  </DebtorCreditor>
+  <DebtorCreditor>
+    <DebitEntries>
+      <DebitEntry>
+        <Value>0</Value>
+        <Timestamp>2020-12-19T18:16:13.1858432+01:00</Timestamp>
+        <Description />
+      </DebitEntry>
+    </DebitEntries>
+    <Name />
+    <TotalDebit>0</TotalDebit>
+  </DebtorCreditor>
+</ArrayOfDebtorCreditor>
