@@ -22,6 +22,18 @@ namespace GuiEksamen.ViewModels
         {
             InspectedUser = user;
 
+            // add current date if it doent exist
+
+            DateTime current = DateTime.Now;
+            current = new DateTime(current.Year, current.Month, current.Day);
+
+            var times = InspectedUser.UserTimes.Where(d => d.Timestamp == current);
+
+            if(times.Count() == 0)
+            {
+                InspectedUser.UserTimes.Add(new UserTimes(current, 0));
+            }
+
             // interval
             _interval = new System.Timers.Timer();
             _interval.Interval = InspectedUser.Freq * 1000;
@@ -38,7 +50,7 @@ namespace GuiEksamen.ViewModels
 
             // time amount
             _timeAmount = new System.Timers.Timer();
-            _timeAmount.Interval = 60 * 1000;
+            _timeAmount.Interval = 2000;
             _timeAmount.Elapsed += OnTimeAmountEvent;
             _timeAmount.Enabled = true;
             _timeAmount.Stop();
@@ -104,7 +116,15 @@ namespace GuiEksamen.ViewModels
 
         private void OnTimeAmountEvent(Object obj, System.Timers.ElapsedEventArgs e)
         {
-            InspectedUser.Amount++;
+            DateTime current = DateTime.Now;
+            current = new DateTime(current.Year, current.Month, current.Day);
+
+            var times = InspectedUser.UserTimes.Where(d => d.Timestamp == current);
+
+            foreach(UserTimes t in times)
+            {
+                t.Amount++;
+            }
         }
 
         ////////////////////////////////commands////////////////////////////

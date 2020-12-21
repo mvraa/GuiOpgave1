@@ -95,6 +95,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Models\UserTimes.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Data\Repository.cs" />
     <Compile Include="ViewModels\AddUserWindowViewModel.cs" />

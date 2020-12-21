@@ -14,15 +14,15 @@ namespace GuiEksamen.Models
         private string name;
         private int freq;
         private int duration;
-        private int amount;
+        private ObservableCollection<UserTimes> usertimes;
         private DateTime time;
 
-        public User(string name, int freq, int duration, int amount, DateTime time)
+        public User(string name, int freq, int duration, ObservableCollection<UserTimes> usertimes, DateTime time)
         {
             this.name = name;
             this.freq = freq;
             this.duration = duration;
-            this.amount = amount;
+            this.usertimes = usertimes;
             this.time = time;
         }
 
@@ -46,10 +46,10 @@ namespace GuiEksamen.Models
             set => SetProperty(ref duration, value);
         }
 
-        public int Amount
+        public ObservableCollection<UserTimes> UserTimes
         {
-            get => amount;
-            set => SetProperty(ref amount, value);
+            get => usertimes;
+            set => SetProperty(ref usertimes, value);
         }
 
         public DateTime Time

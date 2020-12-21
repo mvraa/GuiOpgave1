@@ -21,8 +21,6 @@ namespace GuiEksamen.ViewModels
             _users = users;
         }
 
-        #region Properties
-
         string name = "";
         public string Name
         {
@@ -63,11 +61,6 @@ namespace GuiEksamen.ViewModels
             }
         }
 
-        #endregion Properties 
-
-
-        #region Commands
-
         public ICommand _AddButtonCommand;
 
         public ICommand AddButtonCommand
@@ -76,12 +69,12 @@ namespace GuiEksamen.ViewModels
             {
                 return _AddButtonCommand ?? (_AddButtonCommand = new DelegateCommand(() =>
                 {
-                    _users.Add(new User(Name, Freq, Duration, Amount, DateTime.Now));
+                    _users.Add(new User(Name, Freq, Duration,
+                        new ObservableCollection<UserTimes> { new UserTimes(DateTime.Now, 0) },
+                        DateTime.Now));
                 }));
             }
         }
-
-        #endregion Commands
 
     }
 
