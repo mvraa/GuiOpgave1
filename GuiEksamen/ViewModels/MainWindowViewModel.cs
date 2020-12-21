@@ -29,7 +29,7 @@ namespace GuiEksamen.ViewModels
         public MainWindowViewModel()
         {
             users = new ObservableCollection<User>();
-            users.Add(new User("Mathias", 5, 10, DateTime.Now));
+            users.Add(new User("Mathias", 5, 10, 0, DateTime.Now));
         }
 
 

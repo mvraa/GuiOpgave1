@@ -53,6 +53,16 @@ namespace GuiEksamen.ViewModels
             }
         }
 
+        int amount;
+        public int Amount
+        {
+            get { return amount; }
+            set
+            {
+                SetProperty(ref amount, value);
+            }
+        }
+
         #endregion Properties 
 
 
@@ -66,7 +76,7 @@ namespace GuiEksamen.ViewModels
             {
                 return _AddButtonCommand ?? (_AddButtonCommand = new DelegateCommand(() =>
                 {
-                    _users.Add(new User(Name, Freq, Duration, DateTime.Now));
+                    _users.Add(new User(Name, Freq, Duration, Amount, DateTime.Now));
                 }));
             }
         }
