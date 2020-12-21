@@ -15,17 +15,17 @@ namespace GuiEksamen.ViewModels
     public class InspectUserViewModel : BindableBase
     {
         
-        public InspectUserViewModel(User debtorToInspect)
+        public InspectUserViewModel(User user)
         {
-            InspectedDebtor = debtorToInspect;
+            InspectedUser = user;
         }
 
-        private User inspectedDebtor;
+        private User inspectedUser;
 
-        public User InspectedDebtor
+        public User InspectedUser
         {
-            get => inspectedDebtor;
-            set => SetProperty(ref inspectedDebtor, value);
+            get => inspectedUser;
+            set => SetProperty(ref inspectedUser, value);
         }
 
 
