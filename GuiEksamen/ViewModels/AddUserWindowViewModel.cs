@@ -12,11 +12,11 @@ using Prism.Commands;
 
 namespace GuiEksamen.ViewModels
 {
-    public class AddDebtorCreditorWindowViewModel : BindableBase
+    public class AddUserWindowViewModel : BindableBase
     {
         private ObservableCollection<User> _users;
 
-        public AddDebtorCreditorWindowViewModel(ObservableCollection<User> users)
+        public AddUserWindowViewModel(ObservableCollection<User> users)
         {
             _users = users;
         }

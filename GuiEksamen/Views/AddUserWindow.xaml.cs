@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace GuiEksamen.Views
 {
     /// <summary>
-    /// Interaction logic for InspectDebtorCreditorWindow.xaml
+    /// Interaction logic for AddDebtorCreditorWindow.xaml
     /// </summary>
-    public partial class InspectDebtorCreditorWindow : Window
+    public partial class AddUserWindow : Window
     {
-        public InspectDebtorCreditorWindow()
+        public AddUserWindow()
         {
             InitializeComponent();
         }

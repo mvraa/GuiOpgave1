@@ -12,10 +12,10 @@ using Prism.Mvvm;
 
 namespace GuiEksamen.ViewModels
 {
-    public class InspectDebtorCreditorViewModel : BindableBase
+    public class InspectUserViewModel : BindableBase
     {
         
-        public InspectDebtorCreditorViewModel(User debtorToInspect)
+        public InspectUserViewModel(User debtorToInspect)
         {
             InspectedDebtor = debtorToInspect;
         }

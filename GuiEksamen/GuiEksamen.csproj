@@ -79,11 +79,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="Views\AddDebtorCreditorWindow.xaml">
+    <Page Include="Views\AddUserWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\InspectDebtorCreditorWindow.xaml">
+    <Page Include="Views\InspectUserWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -97,14 +97,14 @@
     </Compile>
     <Compile Include="Models\User.cs" />
     <Compile Include="Data\Repository.cs" />
-    <Compile Include="ViewModels\AddDebtorCreditorWindowViewModel.cs" />
-    <Compile Include="ViewModels\InspectDebtorCreditorViewModel.cs" />
+    <Compile Include="ViewModels\AddUserWindowViewModel.cs" />
+    <Compile Include="ViewModels\InspectUserViewModel.cs" />
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
-    <Compile Include="Views\AddDebtorCreditorWindow.xaml.cs">
-      <DependentUpon>AddDebtorCreditorWindow.xaml</DependentUpon>
+    <Compile Include="Views\AddUserWindow.xaml.cs">
+      <DependentUpon>AddUserWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\InspectDebtorCreditorWindow.xaml.cs">
-      <DependentUpon>InspectDebtorCreditorWindow.xaml</DependentUpon>
+    <Compile Include="Views\InspectUserWindow.xaml.cs">
+      <DependentUpon>InspectUserWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>

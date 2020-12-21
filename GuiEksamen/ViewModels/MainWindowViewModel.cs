@@ -66,8 +66,6 @@ namespace GuiEksamen.ViewModels
             }
         }
 
-        #region Commands
-
 
         ICommand _newCommand;
         public ICommand AddNewDebtorCommand
@@ -76,9 +74,9 @@ namespace GuiEksamen.ViewModels
             {
                 return _newCommand ?? (_newCommand = new DelegateCommand(() =>
                 {
-                    var vm = new AddDebtorCreditorWindowViewModel(Users);
+                    var vm = new AddUserWindowViewModel(Users);
 
-                    var dlg = new AddDebtorCreditorWindow()
+                    var dlg = new AddUserWindow()
                     {
                         DataContext = vm,
                         Owner = App.Current.MainWindow
@@ -104,9 +102,9 @@ namespace GuiEksamen.ViewModels
             {
                 return _inspectCommand ?? (_inspectCommand = new DelegateCommand( () =>
                 {
-                    var vm = new InspectDebtorCreditorViewModel(CurrentUser);
+                    var vm = new InspectUserViewModel(CurrentUser);
                     
-                    var dlg = new InspectDebtorCreditorWindow()
+                    var dlg = new InspectUserWindow()
                     {
                         DataContext = vm,
                         Owner = App.Current.MainWindow
@@ -125,8 +123,6 @@ namespace GuiEksamen.ViewModels
 
             }
         }
-
-        #region Save File Menu Commands
 
 
         ICommand _closeAppCommand;
@@ -260,15 +256,6 @@ namespace GuiEksamen.ViewModels
                 }
             }
         }
-
-
-
-        #endregion
-
-
-        #endregion
-
-
 
     }
 }

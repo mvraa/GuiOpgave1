@@ -32,7 +32,7 @@ namespace GuiEksamen.Models
             set => SetProperty(ref name, value);
         }
 
-        public int F
+        public int Freq
         {
             get => freq;
             set => SetProperty(ref freq, value);
